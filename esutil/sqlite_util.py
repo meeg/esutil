@@ -420,7 +420,7 @@ class SqliteConnection(sqlite.Connection):
 
         dt=[]
         for i in xrange(len(row)):
-            name = description[i][0].lower()
+            name = description[i][0]
             val = row[i]
             if val is None:
                 raise ValueError("Cannot work with None/Null types "
